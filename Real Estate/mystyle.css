@@ -1,0 +1,135 @@
+/*global*/
+:root{
+    --primary:rgb(182, 92, 19);
+    --secondary:rgb(16, 139, 16);
+}
+html{
+    font-size: 62.5%;/* 10px = 1rem*/
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.4rem;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+/*utilities*/
+.flex-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.flex-header-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.btn{
+    display: block;
+    font-size: 16px;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+@media(max-width:768px){
+    .flex-header{
+        flex-direction: column;
+    }
+    .flex-header-v{
+        height: 20vh;
+        text-align: center;
+    }
+}
+/*header*/
+.site-init{
+    background-image: url(realEstate-img-main/header.jpg);
+    height: 40vh;
+    background-size: cover;
+    color: white;
+}
+.menu a{
+    margin-right: 2rem;
+}
+.site-init p{
+    font-size: 2rem;
+}
+.site-second{
+    background-color: #222222;
+    color: white;
+}
+
+@media(max-width:768px){
+    .site-init{
+        height: 22vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
+/*about us*/
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:768px){
+    .flex-about{
+        flex-direction: column;
+    }
+}
+/*house item*/
+.house-item{
+    background-color: white;
+    width: 40rem;
+}
+.price{
+    color:var(--secondary);
+    font-weight: bold;
+}
+
+/*contact form*/
+.form-container{
+
+}
+fieldsdet{
+    padding: 1rem;
+}
+legend,label,input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container textarea{
+    width:70%;
+    background-color: white;
+    border: none;
+    padding: .5rem;
+
+}
